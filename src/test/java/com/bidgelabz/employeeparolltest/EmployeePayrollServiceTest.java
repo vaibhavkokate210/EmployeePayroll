@@ -27,4 +27,11 @@ public class EmployeePayrollServiceTest
 		Assert.assertEquals(3, entries);
 		
 	}
+	
+	@Test
+	public void givenEmployees_WhenReadFromFile_ShouldReturnExactSize() {
+		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+		long entrie = employeePayrollService.readData(IOService.FILE_IO);
+		Assert.assertEquals(3,entrie);
+	}
 }
