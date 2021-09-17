@@ -1,4 +1,4 @@
-package com.bidgelabz.employeeparolltest;
+package com.bridgelabz.employeepayroll;
 
 public class EmployeePayrollData 
 {
