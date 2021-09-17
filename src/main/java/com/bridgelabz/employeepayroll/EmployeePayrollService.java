@@ -50,4 +50,15 @@ public class EmployeePayrollService
     		new EmployeePayrollIOService().writeData(employeePayrollList);
     	}
     }
+    
+    public void printData(IOService fileIo) {
+		if(fileIo.equals(IOService.FILE_IO)) new EmployeePayrollIOService().printData();
+	}
+
+
+	public long countEntries(IOService fileIo) {
+		if(fileIo.equals(IOService.FILE_IO)) return new EmployeePayrollIOService().countEntries();
+		
+		return 0;
+	}
 }
